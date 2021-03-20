@@ -47,8 +47,7 @@ class Ui_MainWindow(object):
         self.buttonConvertirDec.setFont(font)
         self.buttonConvertirDec.setStyleSheet("border: 1px solid black;\n"
 "background-color: rgb(221, 221, 221);\n"
-"color: black;\n"
-"shadow: none;")
+"color: black;")
         self.buttonConvertirDec.setObjectName("buttonConvertirDec")
         self.gridLayout.addWidget(self.buttonConvertirDec, 2, 2, 1, 1)
         self.label_2 = QtWidgets.QLabel(self.gridLayoutWidget)
@@ -65,8 +64,7 @@ class Ui_MainWindow(object):
         self.buttonConvertirHexa.setFont(font)
         self.buttonConvertirHexa.setStyleSheet("border: 1px solid black;\n"
 "background-color: rgb(221, 221, 221);\n"
-"color: black;\n"
-"shadow: none;")
+"color: black;\n")
         self.buttonConvertirHexa.setObjectName("buttonConvertirHexa")
         self.gridLayout.addWidget(self.buttonConvertirHexa, 1, 2, 1, 1)
         self.ioDecimal = QtWidgets.QLineEdit(self.gridLayoutWidget)
@@ -108,8 +106,7 @@ class Ui_MainWindow(object):
         self.buttonConvertirFP.setFont(font)
         self.buttonConvertirFP.setStyleSheet("border: 1px solid black;\n"
 "background-color: rgb(221, 221, 221);\n"
-"color: black;\n"
-"shadow: none;")
+"color: black;")
         self.buttonConvertirFP.setObjectName("buttonConvertirFP")
         self.gridLayout.addWidget(self.buttonConvertirFP, 0, 2, 1, 1)
         self.groupBox = QtWidgets.QGroupBox(self.centralwidget)
@@ -251,10 +248,10 @@ class Ui_MainWindow(object):
     def mostrarInstrucciones(self):
         instrucciones = QMessageBox()
         instrucciones.setWindowTitle('Instrucciones')
-        instrucciones.setText('Estas son las instruccionesEstas son las instruccionesEstas son las instruccionesEstas son las instruccionesEstas son las instruccionesEstas son las instruccionesEstas son las instruccionesEstas son las instruccionesEstas son las instruccionesEstas son las instruccionesEstas son las instruccionesEstas son las instruccionesEstas son las instruccionesEstas son las instrucciones')
+        instrucciones.setText('Conversión Decimal a Punto Flotante:\n 1) Elija el número de bits que desea para la representación en punto flotante (por defecto 16 bits).\n 2) Ingrese el número decimal (ejemplos: 6932, -3.643E-7, \'-inf\', \'NaN\', \'8e-5\').\n 3) Presione el botón \'Convertir\' a la derecha del número decimal.\n\n Conversión Punto Flotante a Decimal:\n 1) Ingrese el número en representación de punto flotante (puede hacerlo en binario o en hexadecimal).\n 2) Presione el botón \'Convertir\' ubicado a la derecha de su entrada.')
         instrucciones.setIcon(QMessageBox.Information)
         instrucciones.setStandardButtons(QMessageBox.Close)
-        instrucciones.setInformativeText('informative')
+        #instrucciones.setInformativeText('informative')
 
         instrucciones.exec_()
 
